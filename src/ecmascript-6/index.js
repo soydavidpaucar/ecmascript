@@ -35,3 +35,17 @@ let lorem2 = `lorem ipsum dolor sieta tem
 lorem ipsum dolor sieta tem`;
 console.log(lorem2);
 
+/* DESESTRUCTURAR OBJETOS ANTES DE ES6 */
+let person = {
+	'name': 'David',
+	'edad': 23,
+	'pais': 'Ecuador',
+};
+console.log(person.name, person.edad, person.pais);
+
+/* DESESTRUCTURAR OBJETOS EN ES6 */
+const {name, edad, pais} = person;
+console.log(name, edad, pais);
+
+
+
