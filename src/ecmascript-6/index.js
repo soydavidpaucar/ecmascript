@@ -54,4 +54,24 @@ let team2 = ['Valeria', 'Jessica', 'Camila'];
 let education = ['David', ...team1, ...team2];
 console.log(education);
 
+/* VARIABLES */
+{
+	/* VAR ES ACCESIBLE GLOBALMENTE AUN ASI ESTE EN UN BLOQUE */
+	var globalVar = 'Global Var';
+}
+
+{
+	/* LET ES ACCESIBLE UNICAMENTE DENTRO DEL BLOQUE DONDE SE CREO */
+	let globalLet = 'Global Let';
+	console.log(globalLet); //Global Let
+}
+
+console.log(globalVar); // Global Var
+/*console.log(globalLet);*/ //globalLet is not defined
+
+/* AL SER UNA CONSTANTE NO PUDE SER MODIFICADO SU VALOR */
+const a = 'b';
+/*a = 'a';*/ //no se puede
+console.log(a); //b
+
 
