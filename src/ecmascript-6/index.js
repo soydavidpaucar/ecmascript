@@ -108,3 +108,19 @@ const listOfNames4 = name => {
 /* ARROW FUNCTION CON RETORNO UNICO SIN UTILIZAR LA PALABRA RETURN */
 const square = num => num * num;
 
+/* PROMESAS SOLO A PARTIR DE ES6 */
+const helloPromise = () => {
+	return new Promise((resolve, reject) => {
+		if (true) {
+			resolve('Valio TODO ');
+		} else {
+			reject('Algo salio mal');
+		}
+	});
+};
+
+helloPromise().then((response) => {
+	console.log(response);
+}).catch((error) => {
+	console.log(error);
+});
