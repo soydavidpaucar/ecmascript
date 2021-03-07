@@ -75,3 +75,12 @@ const a = 'b';
 console.log(a); //b
 
 
+/* PROPIEDADES DE OBJETOS ANTES DE ES6 */
+let nombre = 'David';
+let edad = 23;
+
+obj = {nombre: nombre, edad: edad};
+
+/* PROPIEDADES DE OBJETOS A PARTIR DE ES6 */
+obj2 = {nombre, edad};
+console.log(obj2);
