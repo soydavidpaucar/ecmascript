@@ -47,5 +47,11 @@ console.log(person.name, person.edad, person.pais);
 const {name, edad, pais} = person;
 console.log(name, edad, pais);
 
+/* SPREAD OPERATOR U OPERADOR DE PROPAGACION EN ES6 */
+let team1 = ['Oscar', 'Julia', 'Ricardo'];
+let team2 = ['Valeria', 'Jessica', 'Camila'];
+
+let education = ['David', ...team1, ...team2];
+console.log(education);
 
 
