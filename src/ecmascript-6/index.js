@@ -84,3 +84,27 @@ obj = {nombre: nombre, edad: edad};
 /* PROPIEDADES DE OBJETOS A PARTIR DE ES6 */
 obj2 = {nombre, edad};
 console.log(obj2);
+
+/* FUNCIONES COMO PARAMETROS ANTES DE ES6 CON FUNCIONES ANONIMAS */
+const names = [
+	{name: 'David', edad: 23},
+	{name: 'Juan', edad: 40},
+];
+
+let listOfNames = names.map(function ({name}) {
+	console.log(name);
+});
+
+/* FUNCIONES DE FLECHA O ARROW FUNCTIONS SIEMPRE SON ANONIMAS Y A PARTIR DE ES6 */
+let listOfNames2 = names.map(({name}) => console.log(name));
+/* OTRA FORMA DE ARROW FUNCTIONS A PARTIR DE ES6 */
+const listOfNames3 = (name, edad, pais) => {
+	/* CODIGO */
+};
+/*SI LA ARROW FUNCTION TIENE UN SOLO PARAMETRO*/
+const listOfNames4 = name => {
+	/* CODIGO */
+};
+/* ARROW FUNCTION CON RETORNO UNICO SIN UTILIZAR LA PALABRA RETURN */
+const square = num => num * num;
+
