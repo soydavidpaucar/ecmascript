@@ -24,3 +24,14 @@ console.log(epicPhrase);
 /* TEMPLATE LITERALS EN ES6 */
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
+
+
+/* SALTO DE LÍNEA ANTES DE ES6 */
+let lorem = 'lorem ipsum dolor sieta tem\n' + 'lorem ipsum dolo siet atem';
+console.log(lorem);
+
+/* SALTO DE LÍNEA EN ES6 */
+let lorem2 = `lorem ipsum dolor sieta tem
+lorem ipsum dolor sieta tem`;
+console.log(lorem2);
+
