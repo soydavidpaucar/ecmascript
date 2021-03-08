@@ -124,3 +124,22 @@ helloPromise().then((response) => {
 }).catch((error) => {
 	console.log(error);
 });
+
+
+/* CLASES A PARTIR DE ES6 */
+class Calculator {
+	constructor() {
+		this.valueA = 0;
+		this.valueB = 0;
+	}
+	
+	sumar(valueA, valueB) {
+		this.valueA = valueA;
+		this.valueB = valueB;
+		return this.valueA + this.valueB;
+	}
+}
+
+const calculadora = new Calculator();
+console.log(calculadora.sumar(10, 30));
+
