@@ -147,3 +147,23 @@ console.log(calculadora.sumar(10, 30));
 import {hello} from './module';
 
 hello();
+
+/* GENERADORES */
+
+/* SON FUNCIONES ESPECIALES QUE NO EJECUTAN EL CODIGO HASTA EL FIN DE UNA SOLA VEZ, SINO MAS BIEN, EN CADA LLAMADO DEL
+ NEXT
+ EJECUTA
+ UN YIELD Y ASI POR CADA LLAMADO QUE SE LO HAGA */
+function* helloWorld() {
+	if (true) {
+		yield 'Hello, ';
+	}
+	if (true) {
+		yield 'World';
+	}
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
