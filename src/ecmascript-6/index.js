@@ -143,3 +143,7 @@ class Calculator {
 const calculadora = new Calculator();
 console.log(calculadora.sumar(10, 30));
 
+/* MODULOS A PARTIR DE ES6 */
+import {hello} from './module';
+
+hello();
