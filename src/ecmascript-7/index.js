@@ -7,3 +7,10 @@ if (numbers.includes(7, 3)) {
 	console.log('No Se Encuentra');
 }
 
+/* ELEVAR POTENCIAS A PARTIR DE ES7 */
+let base = 4;
+let exponente = 3;
+/* LA ELEVACION DE POTENCIAS SE LO CREA CON EL DOBLE ** */
+let resultado = base ** exponente;
+
+console.log(resultado);
