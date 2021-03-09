@@ -29,3 +29,8 @@ try {
 let entries = [['name', 'David'], ['edad', 23]];
 console.log(Object.fromEntries(entries));
 
+/* SYMBOL OBJECT */
+let mySymbol = `My Symbol`;
+let symbol = Symbol(mySymbol);
+/* SE ACCEDE AL ELEMENTO DENTRO DE LOS OBJETOS SYMBOL */
+console.log(symbol.description);
