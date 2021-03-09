@@ -8,3 +8,17 @@ const objt = {
 let {nombre, ...todo} = objt;
 console.log(todo);
 
+/* PROPIEDADES DE PROPAGACION */
+const objecto = {
+	nombre: 'David',
+	edad  : 23,
+	pais  : 'EC',
+};
+
+const objecto1 = {
+	...objecto,
+	pais: 'MX',
+};
+
+console.log(objecto1);
+
