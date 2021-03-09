@@ -8,3 +8,11 @@ let arreglo = [1, 2, 3, 4, 5];
 /* MAPEAR CADA ELEMENTO, LUEGO PASARLE UNA FUNCION Y APLANAR */
 console.log(arreglo.flatMap(value => [value, value * 2]));
 
+/* TRIM (ELIMINAR ESPACIOS) */
+let hello = '            hello world';
+/* ELIMINA LOS ESPACIOS AL INICIO */
+console.log(hello.trimStart());
+let hello2 = 'hello world              ';
+/* ELIMINA LOS ESPACIOS AL FINAL */
+console.log(hello2.trimEnd());
+
