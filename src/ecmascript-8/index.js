@@ -27,3 +27,30 @@ const string = 'hello';
 console.log(string.padStart(7, 'hi')); //se añade al inicio de la palabra
 console.log(string.padEnd(7, 'hi')); //se añade al final de la palabra
 
+
+/* ASYNC AWAIT */
+const helloWorld = () => {
+	return new Promise((resolve, reject) => {
+		(true)
+		? setTimeout(() => resolve('Hello World'), 1000)
+		: reject(new Error('Error'));
+	});
+};
+
+const helloAsync = async () => {
+	const hello = await helloWorld();
+	console.log(hello);
+};
+
+helloAsync();
+
+const anotherFunction = async () => {
+	try {
+		const hello = await helloWorld();
+		console.log(hello);
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+anotherFunction();
