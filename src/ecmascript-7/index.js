@@ -1,6 +1,6 @@
 /* INCLUDES A PARTIR DE ES7 */
 let numbers = [1, 2, 3, 7, 8];
-
+/* LA FUNCION INCLUDES PERMITE ENCONTRAR UN ELEMENTO ESPECIFICO DENTRO DE UN ARRAY */
 if (numbers.includes(7)) {
 	console.log('Si Hay Un 7');
 } else {
