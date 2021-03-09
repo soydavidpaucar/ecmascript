@@ -21,3 +21,9 @@ console.log(valores);
 /* DEVUELVE LA CANTIDAD DE ELEMENTOS DEL ARREGLO */
 console.log(valores.length);
 
+/* PADDING */
+/* NOS PERMITE AÑADIR CADENAS VACÍAS A STRING, PUDIENDO MODIFICAR LA CADENA STRING COMO TAL. */
+const string = 'hello';
+console.log(string.padStart(7, 'hi')); //se añade al inicio de la palabra
+console.log(string.padEnd(7, 'hi')); //se añade al final de la palabra
+
