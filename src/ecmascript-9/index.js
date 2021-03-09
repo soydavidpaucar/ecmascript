@@ -36,4 +36,12 @@ helloWorld()
 .catch(error => console.log(error))
 .finally(() => console.log('Finalizo'));
 
+/* EXPRESIONES REGULARES */
+/* EL PRIMER GRUPO EMPIEZA CON [] LA CANTIDAD DE ELEMENTOS A COMPARAR CON {} */
+const regexData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/;
+const match = regexData.exec('2018-04-20');
+const year = match[1];//comparar de la posicion 1 de la regex
+const month = match[2];//comparar de la posicion 2 de la regex
+const day = match[3];//comparar de la posicion 3 de la regex
 
+console.log(`Año ${year} del mes ${month} del dia ${day}`);
