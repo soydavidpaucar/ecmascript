@@ -16,3 +16,11 @@ let hello2 = 'hello world              ';
 /* ELIMINA LOS ESPACIOS AL FINAL */
 console.log(hello2.trimEnd());
 
+/* OPTIONAL CATCH BINDING */
+/* PASAR OPCIONALMENTE EL PARAMETRO DE ERROR AL VALOR DE CATCH */
+try {
+
+} catch {
+	error;
+}
+
