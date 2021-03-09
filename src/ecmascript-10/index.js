@@ -24,3 +24,8 @@ try {
 	error;
 }
 
+/* FROM ENTRIES */
+/* TRANSFORMA CLAVE VALOR A OBJETOS */
+let entries = [['name', 'David'], ['edad', 23]];
+console.log(Object.fromEntries(entries));
+
